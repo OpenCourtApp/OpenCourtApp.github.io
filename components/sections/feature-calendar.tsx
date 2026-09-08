@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Shot } from "@/components/ui/shot";
 import { FeatureSplit } from "@/components/ui/feature-split";
+import { withBase } from "@/lib/site";
 
 export function FeatureCalendar() {
   return (
@@ -18,7 +19,7 @@ export function FeatureCalendar() {
       visual={
         <Shot>
           <Image
-            src="/group-calendar.png"
+            src={withBase("/group-calendar.png")}
             alt="Calendário semanal de reservas das quadras"
             width={5934}
             height={3381}

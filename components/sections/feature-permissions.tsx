@@ -1,4 +1,5 @@
 import { FeatureBleed } from "@/components/ui/feature-bleed";
+import { withBase } from "@/lib/site";
 
 export function FeaturePermissions() {
   return (
@@ -12,7 +13,7 @@ export function FeaturePermissions() {
         "Status de cada convite: pendente ou ativo",
         "Permissões fixadas por quem convida",
       ]}
-      src="/group-collaborators.png"
+      src={withBase("/group-collaborators.png")}
       alt="Tela de colaboradores com funções e status dos convites"
     />
   );

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { Shot } from "@/components/ui/shot";
 import { TextAnimate } from "@/components/ui/text-animate";
+import { withBase } from "@/lib/site";
 
 export function Hero() {
   return (
@@ -10,7 +11,7 @@ export function Hero() {
       {/* Court photo — the hero's focal background (full color, fully visible). */}
       <div
         aria-hidden
-        style={{ backgroundImage: "url('/court-bg.png')" }}
+        style={{ backgroundImage: `url('${withBase("/court-bg.png")}')` }}
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
       />
       {/* Light dark veil at the very top only — just enough for the white
@@ -97,7 +98,7 @@ export function Hero() {
                 preload="metadata"
                 aria-label="Demonstração do OpenCourt em uso"
               >
-                <source src="/hero-demo.mp4" type="video/mp4" />
+                <source src={withBase("/hero-demo.mp4")} type="video/mp4" />
               </video>
             </Shot>
           </div>

@@ -1,4 +1,5 @@
 import { FeatureBleed } from "@/components/ui/feature-bleed";
+import { withBase } from "@/lib/site";
 
 export function FeatureDashboard() {
   return (
@@ -12,7 +13,7 @@ export function FeatureDashboard() {
         "Reservas de hoje e horários ainda livres",
         "Gráfico de ocupação da semana",
       ]}
-      src="/group-dashboard.png"
+      src={withBase("/group-dashboard.png")}
       alt="Painel do OpenCourt com ocupação das quadras ao vivo"
       priority
     />
