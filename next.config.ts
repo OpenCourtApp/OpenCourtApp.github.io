@@ -16,8 +16,11 @@ const nextConfig: NextConfig = {
   basePath: isGithubActions ? "/opencourt-landing-page" : undefined,
   // Expõe o prefixo ao client para prefixar manualmente assets de /public
   // (<video>, backgroundImage, metadata icons), que o Next não prefixa sozinho.
+  // Shell env tem precedência (usado no workflow do Pages via steps.pages.outputs.base_path)
+  // e sobrevive à injeção do configure-pages.
   env: {
-    NEXT_PUBLIC_BASE_PATH: basePath,
+    NEXT_PUBLIC_BASE_PATH:
+      process.env.NEXT_PUBLIC_BASE_PATH ?? basePath,
   },
 };
 
