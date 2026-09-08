@@ -1,6 +1,8 @@
 /** External links used across the landing page. */
 export const APP_URL = "https://opencourtapp.vercel.app";
-export const GITHUB_URL = "https://github.com/OpenCourtApp";
+export const REPO_URL =
+  "https://github.com/OpenCourtApp/opencourt-landing-page";
+export const GITHUB_URL = REPO_URL;
 
 /**
  * Prefixo do subpath no GitHub Pages ("/opencourt-landing-page").

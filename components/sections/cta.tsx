@@ -1,7 +1,8 @@
-import { RiArrowRightLine, RiGoogleFill } from "@remixicon/react";
+import { RiArrowRightLine, RiGithubFill } from "@remixicon/react";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { TextAnimate } from "@/components/ui/text-animate";
+import { REPO_URL } from "@/lib/site";
 
 export function FinalCta() {
   return (
@@ -23,11 +24,11 @@ export function FinalCta() {
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button
-              href="https://opencourtapp.vercel.app/register"
+              href={REPO_URL}
               size="lg"
               className="w-full sm:w-auto"
             >
-              Criar minha conta
+              Ver o código no GitHub
               <RiArrowRightLine className="size-4" />
             </Button>
             <Button
@@ -40,8 +41,8 @@ export function FinalCta() {
             </Button>
           </div>
           <p className="mt-4 inline-flex items-center gap-1.5 text-sm text-muted-foreground">
-            <RiGoogleFill className="size-4" />
-            Grátis para começar · login com Google
+            <RiGithubFill className="size-4" />
+            Repositório público · OpenCourtApp/opencourt-landing-page
           </p>
         </div>
       </Container>

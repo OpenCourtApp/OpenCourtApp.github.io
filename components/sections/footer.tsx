@@ -13,18 +13,21 @@ const groups = [
     ],
   },
   {
-    title: "Empresa",
+    title: "Projeto",
     links: [
-      { label: "Sobre", href: "#" },
-      { label: "Contato", href: "#" },
-      { label: "Blog", href: "#" },
+      { label: "Sobre", href: "#sobre" },
+      { label: "Solução", href: "#solucao" },
+      { label: "Público-alvo", href: "#publico" },
+      { label: "Tecnologias", href: "#tecnologias" },
+      { label: "Equipe", href: "#equipe" },
     ],
   },
   {
-    title: "Legal",
+    title: "Código",
     links: [
-      { label: "Privacidade", href: "#" },
-      { label: "Termos", href: "#" },
+      { label: "Repositório", href: GITHUB_URL },
+      { label: "Entrar no app", href: "https://opencourtapp.vercel.app/login" },
+      { label: "Criar conta", href: "https://opencourtapp.vercel.app/register" },
     ],
   },
 ];

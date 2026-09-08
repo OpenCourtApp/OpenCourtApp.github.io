@@ -8,9 +8,12 @@ import { OpenCourtWordmark } from "@/components/oc-logo";
 import { cn } from "@/lib/utils";
 
 const links = [
+  { label: "Sobre", href: "#sobre" },
+  { label: "Problema", href: "#problema" },
+  { label: "Solução", href: "#solucao" },
   { label: "Recursos", href: "#recursos" },
+  { label: "Equipe", href: "#equipe" },
   { label: "Planos", href: "#planos" },
-  { label: "Perguntas", href: "#faq" },
 ];
 
 export function Navbar() {
