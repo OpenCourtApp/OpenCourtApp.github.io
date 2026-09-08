@@ -4,8 +4,8 @@ Landing page de apresentação do **OpenCourt**, plataforma web para gestão de
 quadras esportivas em escolas e clubes. Reservas, calendário e ocupação em um
 só lugar — sem planilha, sem papel, sem conflito de horário.
 
-- **Repositório:** https://github.com/OpenCourtApp/opencourt-landing-page
-- **Landing page publicada:** https://opencourtapp.github.io/opencourt-landing-page/
+- **Repositório:** https://github.com/OpenCourtApp/OpenCourtApp.github.io
+- **Landing page publicada:** https://opencourtapp.github.io/
 
 ## Problema e solução
 
@@ -93,3 +93,12 @@ npm install
 npm run dev      # http://localhost:3000
 npx tsc --noEmit # checagem de tipos
 ```
+
+## Deploy no GitHub Pages (site raiz)
+
+1. No repo `OpenCourtApp.github.io`: Settings → Pages → **Source: GitHub Actions**.
+2. Push na branch `main` — o workflow `.github/workflows/nextjs.yml`
+   (build `next build` + upload de `./out`) publica automaticamente em
+   `https://opencourtapp.github.io/`.
+3. O site é servido da raiz, sem `basePath`. Todos os assets de `/public`
+   passam por `withBase()` (`lib/site.ts`), que segue válido com prefixo vazio.

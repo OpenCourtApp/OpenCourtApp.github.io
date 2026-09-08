@@ -42,7 +42,7 @@ export function FinalCta() {
           </div>
           <p className="mt-4 inline-flex items-center gap-1.5 text-sm text-muted-foreground">
             <RiGithubFill className="size-4" />
-            Repositório público · OpenCourtApp/opencourt-landing-page
+            Repositório público · OpenCourtApp.github.io
           </p>
         </div>
       </Container>
