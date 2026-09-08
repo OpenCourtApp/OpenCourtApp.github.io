@@ -4,7 +4,7 @@ import { withBase } from "@/lib/site";
 export function FeaturePermissions() {
   return (
     <FeatureBleed
-      id="equipe"
+      id="permissoes"
       eyebrow="Equipe & permissões"
       title="Cada pessoa no seu papel."
       lede="Convide por link. Você define a função — Gestor, Professor ou Representante — e quem entra não pode mudar isso por conta própria."
